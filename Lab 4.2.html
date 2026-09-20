@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qué es One Piece</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Pirata+One&display=swap');
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            color: white;
+            font-family: 'Bangers', cursive;
+            letter-spacing: 1px;
+            background-image: url("Straw_Hat_Pirates'_Jolly_Roger_(based_on_the_original_from_the_series).jpg");
+            background-size: 80% auto;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: black;
+        }
+
+        h1, h2 {
+            font-family: 'Pirata One', cursive;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        header {
+            padding: 30px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.55);
+        }
+
+        .eyecatchers {
+            overflow: hidden;
+            width: 100%;
+            margin: 30px 0;
+        }
+
+        .eyecatchers-track {
+            display: flex;
+            width: max-content;
+            animation: mover 20s linear infinite;
+        }
+
+        .eyecatchers img {
+            width: 260px;
+            height: 160px;
+            object-fit: cover;
+            margin: 0 10px;
+            border: 3px solid #d4af37;
+            border-radius: 10px;
+        }
+
+        @keyframes mover {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            margin: 0;
+            padding: 15px;
+            background-color: rgba(0, 0, 0, 0.65);
+            border-radius: 10px;
+        }
+
+        li img {
+            width: 170px;
+            height: 130px;
+            object-fit: cover;
+            border: 2px solid #d4af37;
+            border-radius: 8px;
+        }
+
+        .volume-control {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 12px;
+            padding: 8px 12px;
+            background-color: rgba(0, 0, 0, 0.65);
+            border-radius: 8px;
+        }
+
+        .volume-control input {
+            accent-color: #d4af37;
+        }
+
+        @media (max-width: 700px) {
+            ul {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Qué es One Piece</h1>
+        <p>One Piece es un manga y anime japonés creado por Eiichiro Oda.</p>
+
+        <main>
+            <section>
+                <h2>Sinopsis</h2>
+                <p>La historia sigue las aventuras de Monkey D. Luffy y su tripulación de piratas en busca del tesoro legendario conocido como "One Piece".</p>
+            </section>
+
+            <section>
+                <h2>Información de la serie</h2>
+                <p><strong>One Piece</strong> es un manga y anime de aventuras, acción y fantasía creado por Eiichiro Oda. El manga comenzó a publicarse en 1997 y la serie de anime se estrenó en 1999.</p>
+                <p>La historia se desarrolla en un mundo formado por mares e islas. Monkey D. Luffy sueña con convertirse en el Rey de los Piratas y para lograrlo reúne a los Piratas del Sombrero de Paja, una tripulación con habilidades, personalidades y sueños muy diferentes.</p>
+                <p>Juntos recorren la Grand Line, enfrentan a otros piratas y se enfrentan al Gobierno Mundial mientras buscan el tesoro dejado por Gol D. Roger, el antiguo Rey de los Piratas.</p>
+                <p>La serie destaca por sus combates, sus misterios y sus momentos de humor, pero también por tratar temas como la amistad, la libertad, la justicia, la lealtad y la importancia de perseguir los propios sueños.</p>
+            </section>
+
+            <section>
+                <h2>Personajes Principales</h2>
+                <ul>
+                    <li>
+                        <img src="./luffy.gif" alt="Luffy">
+                        Monkey D. Luffy: Capitán de la tripulación.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Luffy.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
+
+                    <li>
+                        <img src="./zoro.gif" alt="Zoro">
+                        Roronoa Zoro: Espadachín y combatiente.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Zoro.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
+
+                    <li>
+                        <img src="./nami.gif" alt="Nami">
+                        Nami: Navegante y cartógrafa.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Nami.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
+
+                    <li>
+                        <img src="./usopp.gif" alt="Usopp">
+                        Usopp: Francotirador e inventor.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Usopp.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
+
+                    <li>
+                        <img src="./sanji.gif" alt="Sanji">
+                        Sanji: Cocinero y experto en combate.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Sanji.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
+
+                    <li>
+                        <img src="./chopper.gif" alt="Chopper">
+                        Tony Tony Chopper: Médico de la tripulación.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Chopper.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
+
+                    <li>
+                        <img src="./robin.gif" alt="Robin">
+                        Nico Robin: Arqueóloga.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Robin.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
+
+                    <li>
+                        <img src="./franky.gif" alt="Franky">
+                        Franky: Carpintero naval.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Franky.mp3" type="audio/mpeg">
+                        </audio>
+                    </li>
+
+                    <li>
+                        <img src="./brook.gif" alt="Brook">
+                        Brook: Músico y espadachín.
+                        <audio controls preload="metadata">
+                            <source src="./one-piece-music.mp3/Brook.mp3" type="audio/mpeg">
+                        </audio>
+                   
+                       
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Impacto Cultural</h2>
+                <p>
+                    One Piece se ha convertido en una de las series de manga y anime
+                    más populares e influyentes de la historia. Su éxito se debe a la
+                    combinación de aventuras, humor, acción y personajes con historias
+                    profundas.
+                </p>
+                <p>
+                    La serie ha inspirado videojuegos, películas, figuras coleccionables,
+                    ropa y numerosas colaboraciones con marcas internacionales.
+                    También cuenta con una gran comunidad de seguidores en diferentes países.
+                </p>
+                <p>
+                    Uno de sus mayores aportes es la manera en que presenta temas como la
+                    libertad, la amistad, la desigualdad, la justicia y la importancia de
+                    luchar por los sueños. Estos mensajes han conectado con personas de
+                    distintas edades y culturas.
+                </p>
+                <p>
+                    Además, One Piece ha influido en otros creadores de manga y anime,
+                    convirtiéndose en una obra importante dentro de la cultura japonesa y
+                    del entretenimiento mundial.
+                </p>
+            </section>
+        </main>
+
+        <audio id="musica" loop>
+            <source src="./one-piece-music.mp3/Opening.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>Opening: We Are! — Hiroshi Kitadani</p>
+        <button onclick="document.getElementById('musica').play()">
+            ▶ Reproducir música
+        </button>
+        <button onclick="document.getElementById('musica').pause()">
+            ⏸ Pausar música
+        </button>
+        <label class="volume-control" for="volumen">
+            🔊 Volumen
+            <input id="volumen" type="range" min="0" max="1" step="0.01" value="0.7" oninput="document.getElementById('musica').volume = this.value; document.getElementById('nivel-volumen').textContent = Math.round(this.value * 100) + '%'">
+            <span id="nivel-volumen">70%</span>
+        </label>
+    </header>
+</body>
+</html>
