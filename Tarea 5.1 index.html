@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Game Library: recomendaciones sinceras y recuerdos de videojuegos.">
+    <title>My Game Library | Jugar también es recordar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg site-nav sticky-top" aria-label="Navegación principal">
+        <div class="container"><a class="navbar-brand" href="#inicio"><span class="brand-icon">M</span> MY GAME <span class="brand-muted">LIBRARY</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Abrir navegación"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li><li class="nav-item"><a class="nav-link" href="#biblioteca">Biblioteca</a></li><li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul></div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="inicio">
+            <header class="hero">
+                <div class="hero-slideshow" aria-hidden="true">
+                    <img class="slide active"
+                         src="https://cdn.akamai.steamstatic.com/steam/apps/271590/library_600x900.jpg"
+                         alt="Portada de Grand Theft Auto V">
+
+                    <img class="slide"
+                         src="https://cdn.akamai.steamstatic.com/steam/apps/1091500/library_600x900.jpg"
+                         alt="Portada de Cyberpunk 2077">
+
+                    <img class="slide"
+                         src="https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900.jpg"
+                         alt="Portada de Elden Ring">
+
+                    <img class="slide"
+                         src="https://cdn.akamai.steamstatic.com/steam/apps/1086940/library_600x900.jpg"
+                         alt="Portada de Baldur's Gate 3">
+
+                    <img class="slide"
+                         src="https://cdn.akamai.steamstatic.com/steam/apps/1174180/library_600x900.jpg"
+                         alt="Portada de Red Dead Redemption 2">
+
+                    <img class="slide"
+                         src="https://cdn.akamai.steamstatic.com/steam/apps/292030/library_600x900.jpg"
+                         alt="Portada de The Witcher 3">
+                </div>
+
+                <div class="container hero-content">
+                    <p class="eyebrow">UN BLOG PERSONAL DE JUEGOS</p>
+                    <h1>NO TODOS LOS JUEGOS<br>SON PARA TODOS.<br><span>Y ESO ESTÁ BIEN.</span></h1>
+                    <p class="hero-copy">Recomendaciones y opiniones sinceras desde mi perspectiva sobre los juegos.</p>
+                    <a class="button-accent" href="#biblioteca">ENTRAR A LA BIBLIOTECA <span aria-hidden="true">↗</span></a>
+                </div>
+
+            </header>
+            <section class="section-pad"><div class="container about-grid"><div><p class="eyebrow">SOBRE ESTE ESPACIO</p><h2>Hola, soy Joanelee y<br><span>Me divierten los video juegos.</span></h2></div><div class="about-copy"><p>My Game Library es un blog sobre mis opiniones en ciertos juegos que he jugado, lo cree con el proposito de compartir mis experiencias y recomendaciones.</p><p>No todo juego es para todos asi que aqui estan mis recomendaciones y opiniones para que me entiendan.</p><a class="arrow-link" href="#contacto">Cuéntame qué estás jugando <span aria-hidden="true">→</span></a></div></div></section>
+            <section class="shelf-section section-pad"><div class="container"><div class="section-heading"><div><p class="eyebrow">TRES ESTANTES, CERO JUICIOS</p><h2>¿Qué te apetece jugar?</h2></div><a class="arrow-link" href="#biblioteca">Ver la biblioteca <span aria-hidden="true">→</span></a></div><div class="row g-3">
+                <div class="col-md-4"><a class="shelf-card shelf-beginner" href="#principiantes"><span class="shelf-index">01 / EMPEZAR</span><span class="shelf-title">Mi primer<br>juego</span><span class="shelf-foot">Juegos amables para entrar <b>↗</b></span></a></div>
+                <div class="col-md-4"><a class="shelf-card shelf-favorites" href="#favoritos"><span class="shelf-index">02 / QUEDARSE</span><span class="shelf-title">Mis juegos<br>favoritos</span><span class="shelf-foot">Los que vuelvo a recomendar <b>↗</b></span></a></div>
+                <div class="col-md-4"><a class="shelf-card shelf-not-for-me" href="#no-son-para-mi"><span class="shelf-index">03 / SIN FILTRO</span><span class="shelf-title">No son<br>para mí</span><span class="shelf-foot">También está bien decirlo <b>↗</b></span></a></div>
+            </div></div></section>
+        </section>
+
+        <section id="biblioteca">
+            <header class="page-heading"><div class="container"><p class="eyebrow">MI ESTANTERÍA DIGITAL</p><h1 class="page-title">ELIGE TU<br><span>PRÓXIMO JUEGO.</span></h1><p>Una biblioteca de opiniones personales. Filtra por el tipo de experiencia que buscas.</p></div></header>
+            <div class="filter-section"><div class="container filter-row"><span class="filter-label">MOSTRAR:</span><div class="filter-buttons" role="group" aria-label="Filtrar juegos"><button class="filter-button active" type="button" data-filter="todos" aria-pressed="true">Todos</button><button class="filter-button" type="button" data-filter="principiantes" aria-pressed="false">Para principiantes</button><button class="filter-button" type="button" data-filter="favoritos" aria-pressed="false">Mis favoritos</button><button class="filter-button" type="button" data-filter="no-son-para-mi" aria-pressed="false">No son para mí</button></div></div></div>
+            <div class="container catalog-wrap">
+                <section class="game-shelf" id="principiantes"><div class="shelf-heading"><p class="eyebrow">01 / UNA PUERTA DE ENTRADA</p><h2>Para principiantes</h2><p>Juegos faciles de entender y buenos para comenzar.</p></div><div class="row g-4">
+                    <article class="col-md-6 col-lg-4 game-item" data-category="principiantes"><div class="game-card"><img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=85" alt="Control de videojuegos iluminado"><div class="game-card-content"><div class="game-card-meta"><span>AVENTURA · TRANQUILO</span><span class="opinion-tag tag-love">ME ENCANTA</span></div><h3>Stardew Valley</h3><p>Mi lugar feliz para bajar las revoluciones: una granja, vecinos peculiares y siempre algo pequeño que hacer.</p><a class="arrow-link game-link" href="#detalle" data-game="stardew">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="col-md-6 col-lg-4 game-item" data-category="principiantes"><div class="game-card"><img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=85" alt="Videojuego de aventura submarina"><div class="game-card-content"><div class="game-card-meta"><span>AVENTURA · EXPLORACIÓN</span><span class="opinion-tag tag-love">ME ENCANTA</span></div><h3>Dave the Diver</h3><p>Un día puedes explorar el océano y al siguiente atender un restaurante de sushi: siempre hay algo nuevo que probar.</p><a class="arrow-link game-link" href="#detalle" data-game="dave-the-diver">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                   <article class="col-md-6 col-lg-4 game-item" data-category="principiantes"><div class="game-card"><img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=900&q=85" alt="Mundo de bloques de un videojuego"><div class="game-card-content"><div class="game-card-meta"><span>SUPERVIVENCIA · CREATIVO</span><span class="opinion-tag tag-good">LO DISFRUTO</span></div><h3>Minecraft</h3><p>Construir, explorar o simplemente sobrevivir: cada partida puede convertirse en tu propia aventura.</p><a class="arrow-link game-link" href="#detalle" data-game="minecraft">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                </div></section>
+                <section class="game-shelf" id="favoritos"><div class="shelf-heading"><p class="eyebrow">02 / LOS QUE SE QUEDAN CONMIGO</p><h2>Mis juegos favoritos</h2><p>Juegos Favoritos Al Momento</p></div><div class="row g-4">
+                    <article class="col-md-6 col-lg-4 game-item" data-category="favoritos"><div class="game-card"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2161700/library_600x900.jpg"
+                         alt="Portada de Persona 3 Reload"><div class="game-card-content"><div class="game-card-meta"><span>RPG · NARRATIVO</span><span class="opinion-tag tag-love">ME ENCANTA</span></div><h3>Persona 3 Reload</h3><p>Persona es un juego muy interesante por su historia, música y personajes. Es de mis favoritos de la franquicia por ser tan avanzado y sus mecánicas de peleas.</p><a class="arrow-link game-link" href="#detalle" data-game="persona3">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="col-md-6 col-lg-4 game-item" data-category="favoritos"><div class="game-card"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2767030/library_600x900.jpg" alt="Portada de Marvel Rivals"><div class="game-card-content"><div class="game-card-meta"><span>ACCIÓN · MULTIJUGADOR</span><span class="opinion-tag tag-love">ME ENCANTA</span></div><h3>Marvel Rivals</h3><p>Marvel Rivals es un juego hero shooter multijugador que tiene 6 contra 6. Este juego tiene una dinámica de team-ups que cada personaje tiene una habilidad que es aliada por otro personaje, y eso para mí lo hace único.</p><a class="arrow-link game-link" href="#detalle" data-game="marvel-rivals">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="col-md-6 col-lg-4 game-item" data-category="favoritos"><div class="game-card"><img src="https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900.jpg" alt="Portada de Elden Ring"><div class="game-card-content"><div class="game-card-meta"><span>RPG · EXPLORACIÓN</span><span class="opinion-tag tag-love">ME ENCANTA</span></div><h3>Elden Ring</h3><p>Elden Ring es uno de los mejores juegos que he tenido la oportunidad de jugar. La historia es increíble, las batallas contra los bosses son emocionantes y la libertad que tienes para terminar el juego lo hace un 10/10 para mí.</p><a class="arrow-link game-link" href="#detalle" data-game="elden-ring">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                </div></section>
+                <section class="game-shelf" id="no-son-para-mi"><div class="shelf-heading"><p class="eyebrow">03 / GUSTOS, NO VEREDICTOS</p><h2>No son para mí</h2><p>No significa que sean malos. Simplemente no encontré mi forma de conectar con ellos.</p></div><div class="row g-4">
+                    <article class="col-md-6 col-lg-4 game-item" data-category="no-son-para-mi"><div class="game-card"><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="Arte oficial de Jinx de League of Legends"><div class="game-card-content"><div class="game-card-meta"><span>COMPETITIVO · ONLINE</span><span class="opinion-tag tag-miss">NO CONECTÉ</span></div><h3>League of Legends</h3><p>Admiro la estrategia, pero el ritmo competitivo y el ambiente online no son la experiencia que busco.</p><a class="arrow-link game-link" href="#detalle" data-game="league">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="col-md-6 col-lg-4 game-item" data-category="no-son-para-mi"><div class="game-card"><img src="https://cdn.akamai.steamstatic.com/steam/apps/252490/library_600x900.jpg" alt="Portada oficial de Rust"><div class="game-card-content"><div class="game-card-meta"><span>SUPERVIVENCIA · ONLINE</span><span class="opinion-tag tag-miss">NO CONECTÉ</span></div><h3>Rust</h3><p>La tensión constante puede ser emocionante, pero prefiero mundos donde puedo explorar con calma.</p><a class="arrow-link game-link" href="#detalle" data-game="rust">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                    <article class="col-md-6 col-lg-4 game-item" data-category="no-son-para-mi"><div class="game-card"><img src="https://cdn.akamai.steamstatic.com/steam/apps/2195250/library_600x900.jpg" alt="Portada oficial de EA Sports FC 24"><div class="game-card-content"><div class="game-card-meta"><span>DEPORTES · COMPETITIVO</span><span class="opinion-tag tag-miss">NO CONECTÉ</span></div><h3>EA Sports FC</h3><p>Me gusta el fútbol, pero el bucle anual y el enfoque competitivo no me invitan a volver temporada tras temporada.</p><a class="arrow-link game-link" href="#detalle" data-game="fc">Leer mi experiencia <span aria-hidden="true">→</span></a></div></div></article>
+                </div></section>
+            </div>
+        </section>
+
+        <section id="diario"><div class="journal-section section-pad"><div class="container"><div class="section-heading"><div><p class="eyebrow">NOTAS DE PARTIDA</p><h2>Lo que me dejó el juego</h2></div></div><div class="journal-grid">
+            <button class="journal-card note-link" type="button" data-note="primeras-partidas"><span class="journal-date">NOTA 001 · PARA EMPEZAR</span><h3>Las primeros juegos no tienen que salir bien</h3><p>Aprender a jugar también es parte de la aventura.</p><span class="journal-arrow">LEER NOTA ↗</span></button>
+            <button class="journal-card note-link" type="button" data-note="jugar-sin-prisa"><span class="journal-date">NOTA 002 · A MI RITMO</span><h3>Jugar sin prisa: mi manera favorita de explorar</h3><p>Por qué a veces dejo la misión principal para después.</p><span class="journal-arrow">LEER NOTA ↗</span></button>
+            <button class="journal-card note-link" type="button" data-note="no-conectar"><span class="journal-date">NOTA 003 · OPINIÓN PERSONAL</span><h3>Cuando un juego popular no conecta conmigo</h3><p>El hype de todo el mundo no tiene que ser el mío.</p><span class="journal-arrow">LEER NOTA ↗</span></button>
+        </div></div></div></section>
+
+        <section class="detail-section" id="detalle" hidden><article class="container detail-container"><a class="back-link" href="#biblioteca">← VOLVER</a><p class="eyebrow" id="detailCategory">NOTA DE JUEGO</p><h1 id="detailTitle">Una partida, una historia</h1><p class="detail-deck" id="detailDeck"></p><img id="detailImage" class="detail-image" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1500&q=85" alt="Videojuego"><div id="detailStory" class="detail-story"></div><div class="detail-facts" id="detailFacts"><div><span>MI VEREDICTO</span><strong id="detailVerdict"></strong></div><div><span>IDEAL SI BUSCAS</span><strong id="detailMood"></strong></div></div><a class="button-accent" href="#contacto">¿Tú qué opinas? <span aria-hidden="true">↗</span></a></article></section>
+
+        <section class="contact-band"><div class="container contact-band-inner"><div><p class="eyebrow">TU TURNO</p><h2>¿Qué juego debería probar?</h2></div><a class="button-light" href="#contacto">RECOMIÉNDAME UNO <span aria-hidden="true">↗</span></a></div></section>
+        <section id="contacto" class="section-pad"><div class="container"><div class="page-heading mb-5"><p class="eyebrow">EL CHAT ESTÁ ABIERTO</p><h1 class="page-title">RECOMIÉNDAME<br><span>UN JUEGO.</span></h1><p>¿Hay un juego que debería probar? ¿Tu experiencia fue distinta? Me encantaría leerte.</p></div><div class="contact-grid"><aside class="contact-aside"><p class="eyebrow">TAMBIÉN PUEDES</p><h2>Escribirme<br>directamente.</h2><dl>
+    <div>
+        <dt>EMAIL</dt>
+        <dd><a href="mailto:joaneleelopez29@gmail.com">joaneleelopez29@gmail.com</a></dd>
+    </div>
+    <div>
+        <dt>TELÉFONO</dt>
+        <dd><a href="tel:+15550140268">+1 (555) 014-0268</a></dd>
+    </div>
+</dl></aside><div class="form-panel"><form id="contactForm" class="needs-validation" novalidate><div class="mb-3"><label class="form-label" for="name">Tu nombre</label><input class="form-control" id="name" name="name" type="text" autocomplete="name" required minlength="2"><div class="invalid-feedback">Escribe tu nombre (mínimo 2 caracteres).</div></div><div class="mb-3"><label class="form-label" for="email">Tu email</label><input class="form-control" id="email" name="email" type="email" autocomplete="email" required><div class="invalid-feedback">Escribe una dirección válida.</div></div><div class="mb-3"><label class="form-label" for="game">¿Qué estás jugando? <span class="optional-label">(opcional)</span></label><input class="form-control" id="game" name="game" type="text"></div><div class="mb-3"><label class="form-label" for="message">Tu mensaje</label><textarea class="form-control" id="message" name="message" rows="5" required minlength="10"></textarea><div class="invalid-feedback">Escribe un mensaje de al menos 10 caracteres.</div></div><button class="button-accent" type="submit">ENVIAR MENSAJE <span aria-hidden="true">↗</span></button><p class="form-success" id="formSuccess" role="status" aria-live="polite" hidden>¡Gracias! Este formulario de demostración no envía datos a un servidor.</p></form></div></div></div></section>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><a class="footer-brand" href="#inicio">MY GAME LIBRARY</a><p>Hecho desde mi lado del control · 2026</p><a href="#contacto">Contacto ↗</a></div></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const slides = document.querySelectorAll(".slide");
+        let currentSlide = 0;
+
+        if (slides.length > 1) {
+            setInterval(() => {
+                slides[currentSlide].classList.remove("active");
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add("active");
+            }, 5000);
+        }
+
+        const games = {
+            stardew: {
+                title: "Stardew Valley",
+                category: "AVENTURA · TRANQUILO",
+                verdict: "ME ENCANTA",
+                mood: "Jugar sin prisa",
+                image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1500&q=85",
+                alt: "Control de videojuegos iluminado",
+                deck: "Mi lugar feliz para bajar las revoluciones: una granja, vecinos peculiares y siempre algo pequeño que hacer.",
+                story: [
+                    ["Mi granja", "Empecé plantando unas semillas y terminé pasando un montón de tiempo en mi granja. Me gusta conocer a los vecinos y hacer las cosas a mi ritmo."],
+                    ["Por qué me gusta", "Puedo cultivar, pescar o explorar. No tengo que hacer todo de una vez."],
+                    ["Un buen rato", "A veces no hago ninguna misión importante, pero igual disfruto mucho la partida."]
+                ]
+            },
+            "dave-the-diver": {
+                title: "Dave the Diver",
+                category: "AVENTURA · EXPLORACIÓN",
+                verdict: "ME ENCANTA",
+                mood: "Explorar y probar algo distinto",
+                image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1500&q=85",
+                alt: "Videojuego de aventura submarina",
+                deck: "Un día puedes explorar el océano y al siguiente atender un restaurante de sushi: siempre hay algo nuevo que probar.",
+                story: [
+                    ["Un día diferente", "De día exploro el mar y de noche ayudo en el restaurante. Me gusta que siempre haya algo distinto que hacer."],
+                    ["Explorar el océano", "Me divierte descubrir qué hay bajo el agua y encontrar cosas nuevas."],
+                    ["Para jugar un rato", "Puedo jugar un poco, hacer algunas cosas y seguir con mi día."]
+                ]
+            },
+            persona3: {
+                title: "Persona 3 Reload",
+                category: "RPG · NARRATIVO",
+                verdict: "ME ENCANTA",
+                mood: "Una historia que quieres volver a vivir",
+                image: "https://cdn.akamai.steamstatic.com/steam/apps/2161700/library_600x900.jpg",
+                alt: "Portada de Persona 3 Reload",
+                deck: "Cada intento cuenta algo nuevo. Su música y sus personajes hicieron que siempre quisiera una partida más.",
+                story: [
+                    ["La historia me atrapó", "Empecé a jugar y enseguida quise saber qué iba a pasar con los personajes."],
+                    ["Lo que más me gusta", "Disfruto la música, los personajes y también las peleas."],
+                    ["Un momento especial", "Me gustan las partes tranquilas, cuando puedo hablar con los personajes y conocerlos mejor."]
+                ]
+            },
+            minecraft: {
+                title: "Minecraft",
+                category: "SUPERVIVENCIA · CREATIVO",
+                verdict: "LO DISFRUTO",
+                mood: "Construir y explorar a mi ritmo",
+                image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1500&q=85",
+                alt: "Mundo de bloques de un videojuego",
+                deck: "Construir, explorar o simplemente sobrevivir: cada partida puede convertirse en tu propia aventura.",
+                story: [
+                    ["Empezar de cero", "Al principio tienes muy poco, pero poco a poco puedes construir un lugar para ti."],
+                    ["Jugar como quiera", "Puedo construir, explorar o simplemente buscar materiales. Cada partida es diferente."],
+                    ["Mejor con amigos", "Jugar con otras personas hace que construir y explorar sea todavía más divertido."]
+                ]
+            },
+            "marvel-rivals": {
+                title: "Marvel Rivals",
+                category: "ACCIÓN · MULTIJUGADOR",
+                verdict: "ME ENCANTA",
+                mood: "Trabajar en equipo y hacer plays",
+                image: "https://cdn.akamai.steamstatic.com/steam/apps/2767030/library_600x900.jpg",
+                alt: "Portada de Marvel Rivals",
+                deck: "Marvel Rivals es un hero shooter multijugador con 6 contra 6 y mucha variedad de team-ups entre personajes.",
+                story: [
+                    ["Jugar en equipo", "Me gusta que algunos personajes puedan combinar sus habilidades con las de otros."],
+                    ["Lo más divertido", "Cuando el equipo se entiende y todo sale bien, la partida se siente genial."],
+                    ["Probar personajes", "Me divierte jugar con distintos personajes y descubrir cuáles me gustan más."]
+                ]
+            },
+            "elden-ring": {
+                title: "Elden Ring",
+                category: "RPG · EXPLORACIÓN",
+                verdict: "ME ENCANTA",
+                mood: "Perderme en un mundo enorme",
+                image: "https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900.jpg",
+                alt: "Portada de Elden Ring",
+                deck: "Elden Ring es uno de esos juegos que te deja recordar cada boss, cada camino y cada decisión.",
+                story: [
+                    ["Explorar", "Me gusta poder ir por donde quiera y descubrir lugares que no esperaba encontrar."],
+                    ["Los jefes", "Las peleas pueden ser difíciles, pero se siente muy bien ganar después de varios intentos."],
+                    ["Volver a jugar", "Siempre puedo probar otro camino o enfrentar las peleas de otra manera."]
+                ]
+            },
+            league: {
+                title: "League of Legends",
+                category: "COMPETITIVO · ONLINE",
+                verdict: "NO CONECTÉ",
+                mood: "Competición en equipo",
+                image: "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
+                alt: "Arte oficial de Jinx de League of Legends",
+                deck: "Admiro la estrategia, pero el ritmo competitivo y el ambiente online no son la experiencia que busco.",
+                story: [
+                    ["Entiendo por qué gusta", "Tiene muchos personajes y estrategias. Entiendo por qué a tanta gente le gusta."],
+                    ["No es para mí", "A mí me cuesta disfrutar el ritmo competitivo y prefiero jugar con más calma."],
+                    ["Cada quien tiene sus gustos", "No conecté con este juego, pero eso no significa que sea un mal juego."]
+                ]
+            },
+            rust: {
+                title: "Rust",
+                category: "SUPERVIVENCIA · ONLINE",
+                verdict: "NO CONECTÉ",
+                mood: "Supervivencia con otros jugadores",
+                image: "https://cdn.akamai.steamstatic.com/steam/apps/252490/library_600x900.jpg",
+                alt: "Portada oficial de Rust",
+                deck: "La tensión constante puede ser emocionante, pero prefiero mundos donde puedo explorar con calma.",
+                story: [
+                    ["Siempre alerta", "En este juego puedes perder lo que conseguiste, así que hay que estar pendiente de todo."],
+                    ["Por qué lo dejé", "A mí me gustan más los juegos en los que puedo explorar tranquila y sin tanta presión."],
+                    ["No era mi estilo", "No conecté con Rust, pero eso no significa que sea un mal juego."]
+                ]
+            },
+            fc: {
+                title: "EA Sports FC",
+                category: "DEPORTES · COMPETITIVO",
+                verdict: "NO CONECTÉ",
+                mood: "Fútbol y competición",
+                image: "https://cdn.akamai.steamstatic.com/steam/apps/2195250/library_600x900.jpg",
+                alt: "Portada oficial de EA Sports FC 24",
+                deck: "El fútbol me gusta, pero el bucle anual y el enfoque competitivo no me invitan a volver temporada tras temporada.",
+                story: [
+                    ["Me gusta el fútbol", "Me gusta el fútbol, así que pensé que también disfrutaría jugarlo."],
+                    ["No me atrapó", "Con el tiempo, el juego no me dio muchas ganas de seguir jugando."],
+                    ["Lo que prefiero", "Me gusta más jugar partidos casuales con gente cercana."]
+                ]
+            }
+        };
+        const gameArtwork = {
+            stardew: { image:"https://cdn.akamai.steamstatic.com/steam/apps/413150/library_600x900.jpg", alt:"Portada de Stardew Valley" },
+            "dave-the-diver": { image:"https://cdn.akamai.steamstatic.com/steam/apps/1868140/library_600x900.jpg", alt:"Portada de Dave the Diver" },
+            persona3: { image:"https://cdn.akamai.steamstatic.com/steam/apps/2161700/library_600x900.jpg", alt:"Portada de Persona 3 Reload" },
+            "marvel-rivals": { image:"https://cdn.akamai.steamstatic.com/steam/apps/2767030/library_600x900.jpg", alt:"Portada de Marvel Rivals" },
+            "elden-ring": { image:"https://cdn.akamai.steamstatic.com/steam/apps/1245620/library_600x900.jpg", alt:"Portada de Elden Ring" },
+            minecraft: { image:"https://www.minecraft.net/content/dam/minecraftnet/games/minecraft/game-characters/MC-About_Key-Art_Build_Amazing_Things_600x800.png", alt:"Arte oficial de Minecraft con Steve y Alex construyendo" },
+            league: { image:"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg", alt:"Arte oficial de Jinx de League of Legends" },
+            rust: { image:"https://cdn.akamai.steamstatic.com/steam/apps/252490/library_600x900.jpg", alt:"Portada oficial de Rust" },
+            fc: { image:"https://cdn.akamai.steamstatic.com/steam/apps/2195250/library_600x900.jpg", alt:"Portada oficial de EA Sports FC 24" }
+        };
+        for (const [gameId, artwork] of Object.entries(gameArtwork)) {
+            if (!games[gameId]) continue;
+
+            Object.assign(games[gameId], artwork);
+            const cardImage = document.querySelector(`[data-game="${gameId}"]`)?.closest(".game-card")?.querySelector("img");
+            if (cardImage) {
+                cardImage.src = artwork.image;
+                cardImage.alt = artwork.alt;
+            }
+        }
+        const notes = {
+            "primeras-partidas": {
+                category: "NOTA 001 · PARA EMPEZAR",
+                title: "Las primeras partidas no tienen que salir bien",
+                deck: "Al principio es normal perderse un poco. A mí también me pasa.",
+                image: "https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1500&q=85",
+                alt: "Persona jugando",
+                sections: [
+                    ["No tienes que saberlo todo", "A veces empiezo un juego y no entiendo bien los controles. Está bien. Poco a poco voy aprendiendo mientras juego."],
+                    ["Juega como te guste", "Si una parte se me hace difícil y quiero seguir con la historia, cambio la dificultad. Para mí, lo importante es disfrutar."],
+                    ["Prueba y descubre", "No hace falta aprender todas las reglas antes de empezar. Puedo probar cosas, equivocarme y volver a intentarlo."]
+                ]
+            },
+            "jugar-sin-prisa": {
+                category: "NOTA 002 · A MI RITMO",
+                title: "Jugar sin prisa: mi manera favorita de explorar",
+                deck: "A veces dejo la misión principal para ir a ver qué hay por ahí.",
+                image: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1500&q=85",
+                alt: "Control de videojuegos",
+                sections: [
+                    ["No siempre sigo el mapa", "Si veo un camino que me da curiosidad, voy a explorar. La misión puede esperar."],
+                    ["Me fijo en las cosas pequeñas", "A veces recuerdo más una conversación o un paisaje que la misión principal."],
+                    ["Voy a mi ritmo", "No tengo que terminar el juego rápido. Me gusta poder parar y volver cuando tenga ganas."]
+                ]
+            },
+            "no-conectar": {
+                category: "NOTA 003 · OPINIÓN PERSONAL",
+                title: "Cuando un juego querido no conecta conmigo",
+                deck: "Que a mucha gente le guste no significa que tenga que gustarme a mí.",
+                image: "https://images.unsplash.com/photo-1547394765-185e1e68f34e?auto=format&fit=crop&w=1500&q=85",
+                alt: "Teclado y control",
+                sections: [
+                    ["A veces las expectativas pesan", "Si todo el mundo habla de un juego, puedo empezar a pensar que me tiene que gustar. Pero cada quien lo vive a su manera."],
+                    ["Puedo ver lo bueno y no disfrutarlo", "Un juego puede estar bien hecho y aun así no ser para mí. No pasa nada."],
+                    ["Hay demasiadas opciones para forzar una", "Dejar un juego libera tiempo para encontrar otro. Prefiero hablar de mis gustos con honestidad y curiosidad por lo que sí le funciona a otras personas."]
+                ]
+            }
+        };
+        const detail = document.querySelector("#detalle");
+        function showDetail(data, isGame) {
+            document.querySelector("#detailCategory").textContent = data.category;
+            document.querySelector("#detailTitle").textContent = data.title;
+            document.querySelector("#detailDeck").textContent = data.deck;
+            const image = document.querySelector("#detailImage");
+            image.src = data.image;
+            image.alt = data.alt;
+            image.classList.toggle("game-cover", isGame);
+            const story = document.querySelector("#detailStory");
+            story.replaceChildren();
+            for (const [heading, text] of (data.story || data.sections)) {
+                const title = document.createElement("h2");
+                const paragraph = document.createElement("p");
+                title.textContent = heading;
+                paragraph.textContent = text;
+                story.append(title, paragraph);
+            }
+            document.querySelector("#detailFacts").hidden = !isGame;
+            if (isGame) {
+                document.querySelector("#detailVerdict").textContent = data.verdict;
+                document.querySelector("#detailMood").textContent = data.mood;
+            }
+            detail.hidden = false;
+            detail.scrollIntoView({ behavior:"smooth" });
+            history.replaceState(null, "", "#detalle");
+        }
+        document.querySelectorAll(".game-link").forEach(link => link.addEventListener("click", event => {
+            event.preventDefault();
+            showDetail(games[link.dataset.game], true);
+        }));
+        document.querySelectorAll(".note-link").forEach(button => button.addEventListener("click", () => {
+            showDetail(notes[button.dataset.note], false);
+        }));
+        document.querySelector(".back-link").addEventListener("click", () => {
+            detail.hidden = true;
+        });
+        function scrollToGameContent(element) {
+            if (!element) return;
+
+            const nav = document.querySelector(".site-nav");
+            const filterBar = document.querySelector(".filter-section");
+            const navHeight = nav?.getBoundingClientRect().height || 0;
+            const filterPosition = filterBar
+                ? window.getComputedStyle(filterBar).position
+                : "";
+            const filterHeight =
+                filterBar && ["sticky", "fixed"].includes(filterPosition)
+                    ? filterBar.getBoundingClientRect().height
+                    : 0;
+
+            const top = element.getBoundingClientRect().top + window.scrollY
+                - navHeight - filterHeight - 16;
+
+            window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+        }
+
+        document.querySelectorAll("[data-filter]").forEach(button => {
+            button.addEventListener("click", () => {
+                const filter = button.dataset.filter;
+                const shelves = [...document.querySelectorAll(".game-shelf")];
+
+                document.querySelectorAll("[data-filter]").forEach(item => {
+                    const selected = item === button;
+                    item.classList.toggle("active", selected);
+                    item.setAttribute("aria-pressed", String(selected));
+                });
+
+                shelves.forEach(shelf => {
+                    shelf.hidden = filter !== "todos" && shelf.id !== filter;
+                });
+
+                const targetShelf = filter === "todos"
+                    ? shelves[0]
+                    : document.getElementById(filter);
+
+                requestAnimationFrame(() => {
+                    scrollToGameContent(targetShelf?.querySelector(".shelf-heading"));
+                });
+            });
+        });
+
+        document.querySelectorAll(".shelf-card").forEach(card => {
+            card.addEventListener("click", event => {
+                event.preventDefault();
+
+                const section = document.querySelector(card.getAttribute("href"));
+                if (!section) return;
+
+                scrollToGameContent(
+                    section.querySelector(".shelf-heading") || section
+                );
+            });
+        });
+    </script>
+</body>
+</html>
